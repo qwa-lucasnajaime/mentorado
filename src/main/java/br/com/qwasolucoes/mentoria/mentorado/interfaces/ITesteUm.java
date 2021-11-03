@@ -1,4 +1,4 @@
-package br.com.qwasolucoes.teste_avaliacao.interfaces;
+package br.com.qwasolucoes.mentoria.mentorado.interfaces;
 
 public interface ITesteUm {
   int soma(int numeroUm, int numeroDois);

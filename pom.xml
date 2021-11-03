@@ -10,12 +10,4 @@
 	<name>Projeto de implementação do mentorado</name>
 	<description>Projeto contém as interfaces e as cascas das implementações para que o mentorado finalize a implementação</description>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.1.0</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 </project>
