@@ -3,7 +3,7 @@ package br.com.qwasolucoes.mentoria.interfaces.logica_programacao;
 import java.math.BigDecimal;
 import java.util.List;
 
-import br.com.qwasolucoes.mentoria.implementacoes.estrutura_dados.model.Pessoa;
+import br.com.qwasolucoes.mentoria.implementacoes.logica_programacao.model.Pessoa;
 
 /**
  * @author ronan.silva *

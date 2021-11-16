@@ -1,4 +1,4 @@
-package br.com.qwasolucoes.mentoria.implementacoes.estrutura_dados.model;
+package br.com.qwasolucoes.mentoria.implementacoes.logica_programacao.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
