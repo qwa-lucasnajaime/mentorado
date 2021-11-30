@@ -3,7 +3,7 @@ package br.com.qwasolucoes.mentoria.interfaces.logica_programacao;
 import java.math.BigDecimal;
 import java.util.List;
 
-import br.com.qwasolucoes.mentoria.implementacoes.logica_programacao.model.Pessoa;
+import br.com.qwasolucoes.mentoria.model.Funcionario;
 
 /**
  * @author ronan.silva *
@@ -11,22 +11,22 @@ import br.com.qwasolucoes.mentoria.implementacoes.logica_programacao.model.Pesso
 public interface LogicaProgramacao {
 
 	/**
-	 * Entrada desse método irá receber uma lista de string, com informações posicionais para serem usadas para preencher o objeto pessoa.
+	 * Entrada desse mï¿½todo irï¿½ receber uma lista de string, com informaï¿½ï¿½es posicionais para serem usadas para preencher o objeto pessoa.
 	 * 
-	 * Cada elemento da lista de Strings contém dados de uma pessoa, sendo essa String composta por:
+	 * Cada elemento da lista de Strings contï¿½m dados de uma pessoa, sendo essa String composta por:
 	 * 
-	 * [Nome] - 20 posições
-	 * [Sobrenome] - 20 posições
-	 * [Data de Nascimento] - 8 posições 
-	 * [SEXO] - 1 posição
-	 * [Profissao] - 40 posições
-	 * [CPF OU CNPJ] - 14 posições
-	 * [Escolaridade] - 40 posições
-	 * [Salario] - 10 posições 
+	 * [Nome] - 20 posiï¿½ï¿½es
+	 * [Sobrenome] - 20 posiï¿½ï¿½es
+	 * [Data de Nascimento] - 8 posiï¿½ï¿½es 
+	 * [SEXO] - 1 posiï¿½ï¿½o
+	 * [Profissao] - 40 posiï¿½ï¿½es
+	 * [CPF OU CNPJ] - 14 posiï¿½ï¿½es
+	 * [Escolaridade] - 40 posiï¿½ï¿½es
+	 * [Salario] - 10 posiï¿½ï¿½es 
 	 * [Idade] - calcular a idade
-	 * [É maior de idade?] 
+	 * [ï¿½ maior de idade?] 
 	 * [Risco] - Seguir a regra abaixo:
-	 * 		MENOR_IDADE: Para idade até 18 anos (Aplicar 20% na Taxa)
+	 * 		MENOR_IDADE: Para idade atï¿½ 18 anos (Aplicar 20% na Taxa)
 	 *      RISCO_ALTO: Entre 18 e 24 anos. (Aplicar 15% na Taxa)
 	 *      RISCO_MODERADO: Entre 24 e 32 anos. (Aplicar 10% na Taxa)
 	 *      RISCO_BAIXO: Entre 32 e 50 anos. (Aplicar 5% na Taxa)
@@ -35,44 +35,44 @@ public interface LogicaProgramacao {
 	 * @param lista - String posicional
 	 * @return Uma lista de pessoas
 	 */
-	public List<Pessoa> conversaoStringParaPessoa(final List<String> lista);
+	public List<Funcionario> conversaoStringParaPessoa(final List<String> lista);
 	
 	/**
-	 * Entrada desse método será uma lista de pessoas, que deve convertida para o formato String.
+	 * Entrada desse mï¿½todo serï¿½ uma lista de pessoas, que deve convertida para o formato String.
 	 * 
 	 * A String representado cada pessoa sera composto de:
 	 * 
-	 * [Nome] - 20 posições
-	 * [Sobrenome] - 20 posições
-	 * [Data de Nascimento] - 8 posições 
-	 * [SEXO] - 1 posição
-	 * [Profissao] - 40 posições
-	 * [CPF OU CNPJ] - 14 posições
-	 * [Escolaridade] - 40 posições
-	 * [Salario] - 10 posições 
+	 * [Nome] - 20 posiï¿½ï¿½es
+	 * [Sobrenome] - 20 posiï¿½ï¿½es
+	 * [Data de Nascimento] - 8 posiï¿½ï¿½es 
+	 * [SEXO] - 1 posiï¿½ï¿½o
+	 * [Profissao] - 40 posiï¿½ï¿½es
+	 * [CPF OU CNPJ] - 14 posiï¿½ï¿½es
+	 * [Escolaridade] - 40 posiï¿½ï¿½es
+	 * [Salario] - 10 posiï¿½ï¿½es 
 	 * 
 	 * @param lista - String posicional
 	 * @return Uma lista de Strings com os dados das pessoas
 	 */
-	public List<String> conversaoPessoaParaString(final List<Pessoa> pessoas);
+	public List<String> conversaoPessoaParaString(final List<Funcionario> pessoas);
 	
 	/**
-	 * Entrada desse método irá receber um array de strings, com informações posicionais para serem usadas para preencher o objeto pessoa.
+	 * Entrada desse mï¿½todo irï¿½ receber um array de strings, com informaï¿½ï¿½es posicionais para serem usadas para preencher o objeto pessoa.
 	 * 
-	 * O array é composto de:
+	 * O array ï¿½ composto de:
 	 * 
-	 * [Nome] - posição 0
-	 * [Sobrenome] - posição 1
-	 * [Data de Nascimento] - posição 2 
-	 * [SEXO] - posição 3
-	 * [Profissao] - posição 4
-	 * [CPF OU CNPJ] - posição 5
+	 * [Nome] - posiï¿½ï¿½o 0
+	 * [Sobrenome] - posiï¿½ï¿½o 1
+	 * [Data de Nascimento] - posiï¿½ï¿½o 2 
+	 * [SEXO] - posiï¿½ï¿½o 3
+	 * [Profissao] - posiï¿½ï¿½o 4
+	 * [CPF OU CNPJ] - posiï¿½ï¿½o 5
 	 * [Escolaridade] - Coluna 6
 	 * [Salario] - Coluna 7
 	 * [Idade] - calcular a idade 
-	 * [É maior de idade?]
+	 * [ï¿½ maior de idade?]
 	 * [Risco] - Seguir a regra abaixo:
-	 * 		MENOR_IDADE: Para idade até 18 anos (Aplicar 20% na Taxa)
+	 * 		MENOR_IDADE: Para idade atï¿½ 18 anos (Aplicar 20% na Taxa)
 	 *      RISCO_ALTO: Entre 18 e 24 anos. (Aplicar 15% na Taxa)
 	 *      RISCO_MODERADO: Entre 24 e 32 anos. (Aplicar 10% na Taxa)
 	 *      RISCO_BAIXO: Entre 32 e 50 anos. (Aplicar 5% na Taxa)
@@ -81,12 +81,12 @@ public interface LogicaProgramacao {
 	 * @param array
 	 * @return um objeto Pessoa contendo os dados convertidos
 	 */
-	public Pessoa conversaoArrayParaPessoa(final String[] array);
+	public Funcionario conversaoArrayParaPessoa(final String[] array);
 	
 	/**
-	 * Entrada desse método irá receber um Array Multidimensional, com informações para serem usadas para preencher o objeto pessoa.
+	 * Entrada desse mï¿½todo irï¿½ receber um Array Multidimensional, com informaï¿½ï¿½es para serem usadas para preencher o objeto pessoa.
 	 * 
-	 * O array é composto de:
+	 * O array ï¿½ composto de:
 	 * 
 	 * [Nome] - Coluna 0
 	 * [Sobrenome] - Coluna 1
@@ -97,9 +97,9 @@ public interface LogicaProgramacao {
 	 * [Escolaridade] - Coluna 6
 	 * [Salario] - Coluna 7 
 	 * [Idade] - calcular a idade
-	 * [É maior de idade?]
+	 * [ï¿½ maior de idade?]
 	 * [Risco] - Seguir a regra abaixo:
-	 * 		MENOR_IDADE: Para idade até 18 anos (Aplicar 20% na Taxa)
+	 * 		MENOR_IDADE: Para idade atï¿½ 18 anos (Aplicar 20% na Taxa)
 	 *      RISCO_ALTO: Entre 18 e 24 anos. (Aplicar 15% na Taxa)
 	 *      RISCO_MODERADO: Entre 24 e 32 anos. (Aplicar 10% na Taxa)
 	 *      RISCO_BAIXO: Entre 32 e 50 anos. (Aplicar 5% na Taxa)
@@ -109,17 +109,17 @@ public interface LogicaProgramacao {
 	 * 
 	 * @return Lista de objetos Pessoa contendo os dados convertidos
 	 */
-	public List<Pessoa> conversaoArrayMultidimensionalParaPessoa(final String[][] arrayMultidimensional);
+	public List<Funcionario> conversaoArrayMultidimensionalParaPessoa(final String[][] arrayMultidimensional);
 	
 	/**
-	 * Entrada desse método irá receber um Array de valores inteiros aleatórios.
+	 * Entrada desse mï¿½todo irï¿½ receber um Array de valores inteiros aleatï¿½rios.
 	 * 
 	 * Retornar um array multidimensional composto de:
 	 * 
 	 * Coluna 0 - Valores pares 
 	 * Coluna 1 - Valores Impares 
 	 * Coluna 2 - Valores primos
-	 * Coluna 3 - Resto da divisão
+	 * Coluna 3 - Resto da divisï¿½o
 	 * 
 	 * @param array
 	 * 
@@ -128,14 +128,14 @@ public interface LogicaProgramacao {
 	public int[][] arrayMultidimensionalParesImparesPrimosResto(final int[] array);
 	
 	/**
-	 * Entrada desse método irá receber um Array Multidimensional e posição da informação desejada.
+	 * Entrada desse mï¿½todo irï¿½ receber um Array Multidimensional e posiï¿½ï¿½o da informaï¿½ï¿½o desejada.
 	 * 
 	 * Retornar um array composto de:
 	 * 
-	 * Coluna 0 - antecessor da posição
-	 * Coluna 1 - sucessor da posição
-	 * Coluna 2 - acima da posição
-	 * Coluna 3 - abaixo da posição
+	 * Coluna 0 - antecessor da posiï¿½ï¿½o
+	 * Coluna 1 - sucessor da posiï¿½ï¿½o
+	 * Coluna 2 - acima da posiï¿½ï¿½o
+	 * Coluna 3 - abaixo da posiï¿½ï¿½o
 	 * 
 	 * @param arrayMultidimensional
 	 * 
@@ -144,7 +144,7 @@ public interface LogicaProgramacao {
 	public String[] arrayMultidimensionalPorPosicoes(final String[][] arrayMultidimensional, final int coluna, final int linha);
 	
 	/**
-	 * Entrada desse método irá receber um Array Multidimensional e o valor da informação desejada.
+	 * Entrada desse mï¿½todo irï¿½ receber um Array Multidimensional e o valor da informaï¿½ï¿½o desejada.
 	 * 
 	 * Retornar um array composto de:
 	 * 
@@ -160,10 +160,10 @@ public interface LogicaProgramacao {
 	public String[] arrayMultidimensionalPorValor(final String[][] arrayMultidimensional, final String valor);
 	
 	/**
-	 * Retorne  seu antecessor e seu sucessor a partir da posição.
+	 * Retorne  seu antecessor e seu sucessor a partir da posiï¿½ï¿½o.
 	 * 
-	 * [0] - antecessor da posição
-	 * [1] - sucessor da posição
+	 * [0] - antecessor da posiï¿½ï¿½o
+	 * [1] - sucessor da posiï¿½ï¿½o
 	 * 
 	 * @param array
 	 * @return array 
@@ -182,7 +182,7 @@ public interface LogicaProgramacao {
 	public String[] antecessorSucessorPor(final String[] array, final String valor);
 	
 	/**
-	 * Retorna uma lista de números pares, até o valor limite, começando de zero.
+	 * Retorna uma lista de nï¿½meros pares, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite 
 	 * 
@@ -191,7 +191,7 @@ public interface LogicaProgramacao {
 	public List<Integer> numerosPares(final Integer limite);
 
 	/**
-	 * Retorna uma lista de números impares, até o valor limite, começando de zero.
+	 * Retorna uma lista de nï¿½meros impares, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite 
 	 * 
@@ -200,7 +200,7 @@ public interface LogicaProgramacao {
 	public List<Integer> numerosImpares(final Integer limite);
 	
 	/**
-	 * Retorna uma lista de números primos, até o valor limite, começando de zero.
+	 * Retorna uma lista de nï¿½meros primos, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite 
 	 * 
@@ -209,7 +209,7 @@ public interface LogicaProgramacao {
 	public List<Integer> numerosPrimos(final Integer limite);
 	
 	/**
-	 * Retorna um array de números pares, até o valor limite, começando de zero.
+	 * Retorna um array de nï¿½meros pares, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite 
 	 * 
@@ -218,7 +218,7 @@ public interface LogicaProgramacao {
     public int[] numerosParesArray(final Integer limite);
 	
 	/**
-	 * Retorna um array de números impares, até o valor limite, começando de zero.
+	 * Retorna um array de nï¿½meros impares, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite 
 	 * 
@@ -227,7 +227,7 @@ public interface LogicaProgramacao {
 	public int[] numerosImparesArray(final Integer limite);
 	
 	/**
-	 * Retorna um array de números primos, até o valor limite, começando de zero.
+	 * Retorna um array de nï¿½meros primos, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite 
 	 * 
@@ -236,7 +236,7 @@ public interface LogicaProgramacao {
 	public int[] numerosPrimosArray(final Integer limite);
 	
 	/**
-	 * Retorna um array de 2 posições, até o valor limite, começando de zero.
+	 * Retorna um array de 2 posiï¿½ï¿½es, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * [0] - Primeiro elemento do array
 	 * [1] - ultimo elemento do array
@@ -248,7 +248,7 @@ public interface LogicaProgramacao {
 	public int[] primeiraUltimaPosicaoArray(final Integer limite);
 	
 	/**
-	 * Retorna um array de 2 posições, até o valor limite, começando de zero.
+	 * Retorna um array de 2 posiï¿½ï¿½es, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * [0] - Primeiro elemento do array - Quantidade de valores Pares
 	 * [1] - Segunda elemento do array - Quantidade de valores Impares
@@ -262,11 +262,11 @@ public interface LogicaProgramacao {
 	public int[] quantidadeParesImparesPrimos(final List<Integer> valores);
 	
 	/**
-	 * Retorna um array de 3 posições, até o valor limite, começando de zero.
+	 * Retorna um array de 3 posiï¿½ï¿½es, atï¿½ o valor limite, comeï¿½ando de zero.
 	 * 
 	 * [0] - Primeiro elemento do array
 	 * [1] - ultimo elemento do array
-	 * [2] - média de todos os valores
+	 * [2] - mï¿½dia de todos os valores
 	 * 
 	 * @param limite - Limite 
 	 * 
@@ -339,7 +339,7 @@ public interface LogicaProgramacao {
 	public List<String> listaTextoDuplicados(final List<String> textos);
 
 	/**
-	 * Retornar a soma dos valores até o limite, começando de zero.
+	 * Retornar a soma dos valores atï¿½ o limite, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * 
@@ -348,7 +348,7 @@ public interface LogicaProgramacao {
 	public Integer somarValores(final Integer limite);
 	
 	/**
-	 * Retornar a soma dos valores pares, começando de zero.
+	 * Retornar a soma dos valores pares, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * @return - resultado
@@ -356,7 +356,7 @@ public interface LogicaProgramacao {
 	public Integer somarValoresPares(final Integer limite);
 	
 	/**
-	 * Retornar a soma dos valores impares, começando de zero.
+	 * Retornar a soma dos valores impares, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * @return - resultado
@@ -364,7 +364,7 @@ public interface LogicaProgramacao {
 	public Integer somarValoresImpares(final Integer limite);
 	
 	/**
-	 * Retornar a soma dos valores primos, começando de zero.
+	 * Retornar a soma dos valores primos, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * @return - resultado
@@ -372,7 +372,7 @@ public interface LogicaProgramacao {
 	public Integer somarValoresPrimos(final Integer limite);
 	
 	/**
-	 * Retornar a soma dos valores do array, começando de zero.
+	 * Retornar a soma dos valores do array, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * 
@@ -381,7 +381,7 @@ public interface LogicaProgramacao {
 	public Integer somarValoresPosicoes(final int[] valores);
 	
 	/**
-	 * Retornar a soma dos valores pares do array, começando de zero.
+	 * Retornar a soma dos valores pares do array, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * @return - resultado
@@ -389,7 +389,7 @@ public interface LogicaProgramacao {
 	public Integer somarValoresParesPosicoes(final int[] valores);
 	
 	/**
-	 * Retornar a soma dos valores impares do array, começando de zero.
+	 * Retornar a soma dos valores impares do array, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * @return - resultado
@@ -397,7 +397,7 @@ public interface LogicaProgramacao {
 	public Integer somarValoresImparesPosicoes(final int[] valores);
 	
 	/**
-	 * Retornar a soma dos valores primos do array, começando de zero.
+	 * Retornar a soma dos valores primos do array, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * @return - resultado
@@ -405,7 +405,7 @@ public interface LogicaProgramacao {
 	public Integer somarValoresPrimosPosicoes(final int[] valores);
 	
 	/**
-	 * Aplicar o multiplo aos valores pares, começando de zero.
+	 * Aplicar o multiplo aos valores pares, comeï¿½ando de zero.
 	 * 
 	 * @param limite - Limite
 	 * @param multiplo - Multiplo

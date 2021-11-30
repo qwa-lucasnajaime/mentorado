@@ -5,7 +5,7 @@ import br.com.qwasolucoes.mentoria.interfaces.ITesteUm;
 public class TesteUm implements ITesteUm {
 
   public int soma(int numeroUm, int numeroDois) {
-    return 0;
+    return numeroUm+numeroDois;
   }
   
 }
