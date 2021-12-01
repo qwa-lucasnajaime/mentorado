@@ -1,6 +1,5 @@
 package br.com.qwasolucoes.mentoria.testes;
 
-
 import org.junit.Assert;
 import org.junit.Test;
 
