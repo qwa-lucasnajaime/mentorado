@@ -6,7 +6,7 @@ import java.util.List;
 import br.com.qwasolucoes.mentoria.model.Funcionario;
 
 /**
- * @author ronan.silva *
+ * @author ronan.silva, fernando.nissizaki
  */
 public interface LogicaProgramacao {
 
@@ -413,5 +413,111 @@ public interface LogicaProgramacao {
 	 * @return resultado
 	 */
 	public Integer somarValoresPosicoesParesMultiplosDe(final Integer limite, final Integer multiplo);
+	
+	/**
+	 * Verificar se o valor informado é múltuiplo de 7 ou não
+	 * 
+	 * @param valor - Valor a verificar se é múltiplo de 7
+	 * @return <b>true</b> se for múltiplo, <b>falso</b> caso contrário
+	 */
+	public boolean multiploDeSete(int valor);
+	
+	/**
+	 * Verificar se o valor informado é par ou ímpar.
+	 * 
+	 * @param valor - Valor a verificar se é par ou ímpar
+	 * @return A palavra <b>PAR</b> se for par e <b>IMPAR</b> (SEM ACENTO) caso seja ímpar
+	 * @author Fernando Nissizaki
+	 */
+	public String parOuImpar(int valor);
+	
+	/**
+	 * Verificar se o valor informado é par ou ímpar ou zero.
+	 * 
+	 * @param valor - Valor a verificar se é par ou ímpar  ou zero
+	 * @return A palavra <b>PAR</b> se for par e <b>IMPAR</b> (SEM ACENTO) caso seja ímpar
+	 * @author Fernando Nissizaki
+	 */
+	public String parOuImparOuZero(int valor);
+	
+	/**
+	 * WHILE
+	 * 
+	 * Dado um número inteiro, retornar o dobro de cada valor incrementado em 1 até que se chege ao dobro do valor informado:
+	 * Ex: valor=5
+	 * 	Retorna [10, 12, 14, 16, 18, 20]
+	 * 	desmembrando
+	 * 		5*2=10
+	 * 		6*2=12
+	 * 		7*2=14
+	 * 		...
+	 * 		10*2=20 (10 é o dobro do valor informado)
+	 * 
+	 * @param valor - Valor a dobrar e iterar
+	 * @return A lista com os dobros
+	 * @author Fernando Nissizaki
+	 */
+	public int[] obterDobrosAteDobroInformado(int valor);
+	
+
+	/**
+	 * WHILE
+	 * 
+	 * Dado um número inteiro, retorno o dobro do número e incremente o número até que o número informado chegue a 10
+	 * Ex: valor=8
+	 * 	Retorna [16, 17, 20]
+	 * 
+	 * Ex: valor=15
+	 * 	Retorna []
+	 * 
+	 * @param valor - Valor a dobrar e iterar
+	 * @return A lista com os dobros
+	 * @author Fernando Nissizaki
+	 */
+	public int[] obterDobrosAteDez(int valor);
+
+	/**
+	 * DO-WHILE
+	 * 
+	 * Dado um número inteiro, dobre-o até que o número seja maior ou igual a 1000, retorne os resultados
+	 * EX: número=10
+	 * 		- imprime 20
+	 * 		- imprime 40
+	 * 		- imprime 80
+	 * 		- imprime 160
+	 * 		- imprime 320
+	 * 		- imprime 640
+	 * 		- imprime 1280
+	 * 
+	 * Ex2: número 1500
+	 * 		- imprime 3000
+	 * 
+	 * @param valor - Valor a dobrar
+	 * @return A lista com os dobros
+	 * @author Fernando Nissizaki
+	 */
+	public int[] obterDobrosAteMil(int valor);
+
+	/**
+	 * Dado um valor, retornar a tabela de tabuada de 1 até o valor informado
+	 * 
+	 * EX: número=2
+	 * 	1, 1, 1
+	 * 	1, 2, 2
+	 * 	1, 3, 3
+	 *  ...
+	 *  1, 10, 10
+	 *  2, 1, 2
+	 *  2, 2, 4
+	 *  2, 3, 6
+	 *  ...
+	 *  2, 10, 20
+	 *
+	 * 
+	 * @param valor - valor limite da tabuada
+	 * @return Matriz com a tabuada
+	 * @author Fernando Nissizaki
+	 */
+	public int[][] tabuada(int valor);
 	
 }
