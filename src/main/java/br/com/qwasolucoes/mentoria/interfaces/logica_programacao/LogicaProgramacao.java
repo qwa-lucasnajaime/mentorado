@@ -9,6 +9,8 @@ import br.com.qwasolucoes.mentoria.model.Funcionario;
  * @author ronan.silva, fernando.nissizaki
  */
 public interface LogicaProgramacao {
+	
+//	public BoloCenoura fazerBolo(leite, farinha, forma, ovo, fermento, cenoura)
 
 	/**
 	 * Entrada desse método irá receber uma lista de string, com informações posicionais para serem usadas para preencher o objeto pessoa.

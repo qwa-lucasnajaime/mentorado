@@ -4,9 +4,9 @@ import java.util.List;
 
 public class TestExecucao {
 	
-	public static void main (String[] args) {
+	//public static void main (String[] args) {
 		
-		LogicaProgramacaoProvider provider = new LogicaProgramacaoProvider();
+		//LogicaProgramacaoProvider provider = new LogicaProgramacaoProvider();
 		//exemplo de como fazer os exercicios
 		//TestExecucao test = new TestExecucao();
 		
@@ -29,8 +29,6 @@ public class TestExecucao {
 			}
 			return 0;
 		}
-	}
-}
 
 		
 //		for(int x = 1; x <= 100; x++) {
@@ -47,15 +45,15 @@ public class TestExecucao {
 //		return numero1 + numero2;
 //	}
 
-//	public int numerosImpares(Integer limite) {
-//		for (int x = 0; x <= limite; x++) {
-//			if(x % 2 != 0) {
-//				System.out.println(x+ "");
-//			}
-//		}
-//		
-//		return 0;
-//	}
+	public int numerosImpares(Integer limite) {
+		for (int x = 0; x <= limite; x++) {
+			if(x % 2 != 0) {
+				System.out.println(x+ "");
+			}
+		}
+		
+		return 0;
+	}
 //	
 //	public static List<Integer> numerosPrimos(Integer limite) {
 //		//List<Integer> lista = new 
@@ -73,4 +71,4 @@ public class TestExecucao {
 //		return limite;
 //	}
 //	//this.limite += limite;
-		
+	}
