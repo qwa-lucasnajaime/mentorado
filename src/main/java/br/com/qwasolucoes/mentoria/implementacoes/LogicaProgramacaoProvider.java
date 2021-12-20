@@ -64,7 +64,7 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 			}
 		}
 
-		return null;//umerosPares(limite);
+		return null;//umerosPares(limite); BRANCH DESENVOLVIMENTO
 	}
 	
 	public List<Integer> numerosImpares(Integer limite) {
