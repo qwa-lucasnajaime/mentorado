@@ -467,9 +467,9 @@ public interface LogicaProgramacao {
 	/**
 	 * WHILE
 	 * 
-	 * Dado um número inteiro, retorno o dobro do número e incremente o número até que o número informado chegue a 10
+	 * Dado um numero inteiro, retorne o dobro do numero e incremente o numero ate que o numero informado chegue a 10
 	 * Ex: valor=8
-	 * 	Retorna [16, 17, 20]
+	 * 	Retorna [16, 17, 18]
 	 * 
 	 * Ex: valor=15
 	 * 	Retorna []
@@ -483,7 +483,7 @@ public interface LogicaProgramacao {
 	/**
 	 * DO-WHILE
 	 * 
-	 * Dado um número inteiro, dobre-o até que o número seja maior ou igual a 1000, retorne os resultados
+	 * Dado um numero inteiro, dobre-o ate que o numero seja maior ou igual a 1000, retorne os resultados
 	 * EX: número=10
 	 * 		- imprime 20
 	 * 		- imprime 40

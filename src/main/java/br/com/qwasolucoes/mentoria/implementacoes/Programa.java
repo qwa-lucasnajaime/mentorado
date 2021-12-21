@@ -1,6 +1,6 @@
 package br.com.qwasolucoes.mentoria.implementacoes;
 
-import java.util.List;
+import java.util.Scanner;
 
 public class Programa {
 
@@ -8,17 +8,43 @@ public class Programa {
 		// TODO Auto-generated method stub
 		//////
 		LogicaProgramacaoProvider provider = new LogicaProgramacaoProvider();
-		//TestExecucao test = new TestExecucao();
+//		//TestExecucao test = new TestExecucao();
+//		
+//		List<Integer> resultadoPares = provider.numerosPares(10);
+//		
+////		for(int i=0; i ; i++) {
+////			
+////		}
+//		
+//		System.out.println(resultadoPares);
+//		System.out.println(resultadoPares.size());
 		
-		List<Integer> resultadoPares = provider.numerosPares(10);
-		
-//		for(int i=0; i ; i++) {
+	// ------------------------------------------------------
+	
+//	Scanner sc = new Scanner(System.in);
+//	
+//		System.out.println("Esolha um numero para fazer a tabuada: ");
+//		int numero = sc.nextInt();
+//		
+//		int multiplicador = 0;
+//		for(int i= 0; i <= 10; i++) {
+//			int total = numero * i;
+//			System.out.println(numero + " x " + i + " = " + total);
 //			
 //		}
+	//----------------------------------------------------------------
+	
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite um numero: ");
+		int numero = sc.nextInt();
 		
-		System.out.println(resultadoPares);
-		System.out.println(resultadoPares.size());
-		
+		int total = 0;
+		do {
+			numero = numero * 2;
+			total = numero;
+		System.out.println("imiprimi: "+ total);	
+			
+		}while(total < 1000 ); 
 	
 	}
 

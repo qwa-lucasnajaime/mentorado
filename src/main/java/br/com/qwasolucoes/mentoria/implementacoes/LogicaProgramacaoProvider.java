@@ -3,6 +3,7 @@ package br.com.qwasolucoes.mentoria.implementacoes;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 //import br.com.qwasolucoes.mentoria.implementacoes.estrutura_dados.model.Pessoa;
 import br.com.qwasolucoes.mentoria.interfaces.logica_programacao.LogicaProgramacao;
@@ -265,11 +266,35 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 
 	public int[] obterDobrosAteMil(int valor) {
 		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite um numero: ");
+		int numero = sc.nextInt();
+		
+		int total = 0;
+		do {
+			numero = numero * 2;
+			total = numero;
+		System.out.println("imiprimi: "+ total);	
+			
+		}while(total < 1000 ); 
+				
 		return null;
 	}
 
 	public int[][] tabuada(int valor) {
 		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Esolha um numero para fazer a tabuada: ");
+		int numero = sc.nextInt();
+		
+		int multiplicador = 0;
+		for(int i= 0; i <= 10; i++) {
+			int total = numero * i;
+			System.out.println(numero + " x " + i + " = " + total);
+			
+		}
 		return null;
 	}
 
