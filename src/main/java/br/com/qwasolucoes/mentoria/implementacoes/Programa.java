@@ -34,18 +34,33 @@ public class Programa {
 //		}
 	//----------------------------------------------------------------
 	
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Digite um numero: ");
+//		int numero = sc.nextInt();
+//		
+//		int total = 0;
+//		do {
+//			numero = numero * 2;
+//			total = numero;
+//		System.out.println("imprimi: "+ total);	
+//			
+//		}while(total < 1000 ); 
+	
+	//---------------------------------------------------------------
+	
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Digite um numero: ");
 		int numero = sc.nextInt();
 		
-		int total = 0;
-		do {
-			numero = numero * 2;
-			total = numero;
-		System.out.println("imiprimi: "+ total);	
-			
-		}while(total < 1000 ); 
-	
+		int total = 0;  
+		
+		numero = numero * 2;
+		System.out.println(numero);	
+		while(numero < 10) {
+		
+			numero = numero + 1;
+			System.out.println(numero);
+		}	
 	}
 
 }

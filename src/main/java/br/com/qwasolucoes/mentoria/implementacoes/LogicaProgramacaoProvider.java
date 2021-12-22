@@ -261,6 +261,20 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 
 	public int[] obterDobrosAteDez(int valor) {
 		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite um numero: ");
+		int numero = sc.nextInt();
+		
+		int total = 0;  
+		
+		numero = numero * 2;
+		System.out.println(numero);	
+		while(numero < 10) {
+		
+			numero = numero + 1;
+			System.out.println(numero);
+		}	
 		return null;
 	}
 
