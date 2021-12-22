@@ -74,19 +74,30 @@ public class Programa {
 //		
 	
 	//----------------------------------------------------------------------
-
+//
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Digite um numero: ");
+//		int numero = sc.nextInt();
+//		
+//		if(numero % 2 == 0) {
+//			System.out.println("Par");
+//		}
+//		if(numero % 2 != 0) {
+//			System.out.println("Ímpar");
+//		}
+//		if(numero == 0) {
+//			System.out.println("Numero é 0");
+//		}
+		//-----------------------------------------------------------------
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Digite um numero: ");
 		int numero = sc.nextInt();
 		
-		if(numero % 2 == 0) {
-			System.out.println("Par");
-		}
-		if(numero % 2 != 0) {
-			System.out.println("Ímpar");
-		}
-		if(numero == 0) {
-			System.out.println("Numero é 0");
-		}
+			if(numero % 7 == 0) {
+				System.out.printf("%d é um numero primo", numero);
+			}else {
+				System.out.printf("%d não é numero primo", numero);
+			}
 	}
 }

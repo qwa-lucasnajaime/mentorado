@@ -246,6 +246,8 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 
 	public String parOuImpar(int valor) {
 		// TODO Auto-generated method stub
+		
+		
 		return null;
 	}
 
