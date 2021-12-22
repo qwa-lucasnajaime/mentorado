@@ -48,19 +48,45 @@ public class Programa {
 	
 	//---------------------------------------------------------------
 	
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Digite um numero: ");
+//		int numero = sc.nextInt();
+//		
+//		int total = 0;  
+//		
+//		numero = numero * 2;
+//		System.out.println(numero);	
+//		while(numero < 10) {
+//		
+//			numero = numero + 1;
+//			System.out.println(numero);
+//		}	
+	//-------------------------------------------------------------------
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Digite um numero: ");
+//		int numero = sc.nextInt();
+//		
+//		int total = numero;
+//		numero = numero * 2;
+//		
+//		
+//		
+	
+	//----------------------------------------------------------------------
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Digite um numero: ");
 		int numero = sc.nextInt();
 		
-		int total = 0;  
-		
-		numero = numero * 2;
-		System.out.println(numero);	
-		while(numero < 10) {
-		
-			numero = numero + 1;
-			System.out.println(numero);
-		}	
+		if(numero % 2 == 0) {
+			System.out.println("Par");
+		}
+		if(numero % 2 != 0) {
+			System.out.println("Ímpar");
+		}
+		if(numero == 0) {
+			System.out.println("Numero é 0");
+		}
 	}
-
 }

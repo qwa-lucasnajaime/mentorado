@@ -251,11 +251,25 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 
 	public String parOuImparOuZero(int valor) {
 		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite um numero: ");
+		int numero = sc.nextInt();
+		
+		if(numero % 2 == 0) {
+			System.out.println("Par");
+		}
+		if(numero % 2 != 0) {
+			System.out.println("Ímpar");
+		}
+		if(numero == 0) {
+			System.out.println("Numero é 0");
+		}
 		return null;
 	}
 
 	public int[] obterDobrosAteDobroInformado(int valor) {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
@@ -303,7 +317,6 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 		System.out.println("Esolha um numero para fazer a tabuada: ");
 		int numero = sc.nextInt();
 		
-		int multiplicador = 0;
 		for(int i= 0; i <= 10; i++) {
 			int total = numero * i;
 			System.out.println(numero + " x " + i + " = " + total);
