@@ -303,7 +303,7 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 			System.out.println("desmebrando: "+ soma + "*" + "2" + "=" +total);
 		}
 		if(total == (soma * 2)) {
-			System.out.println("Dobro do valor informado: " + total);
+			System.out.println("Dobro do valor escolhido: " + total);
 		}
 		return null;
 	}
