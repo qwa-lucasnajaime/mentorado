@@ -1,13 +1,29 @@
 package br.com.qwasolucoes.mentoria.implementacoes;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Programa {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//////
+
 		LogicaProgramacaoProvider provider = new LogicaProgramacaoProvider();
+	
+		//Retorna uma lista de numeros impares, ate o valor limite, começando de zero
+		
+		
+//		List<Integer> listaPares = new ArrayList<>(1000);
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.println("Informe o limite da sua lista:");
+//		int limite = sc.nextInt();
+		
+		
+		
+		
+//---------------------------------------------------------------------------		
 //		//TestExecucao test = new TestExecucao();
 //		
 //		List<Integer> resultadoPares = provider.numerosPares(10);
@@ -63,20 +79,20 @@ public class Programa {
 //		}	
 	//-------------------------------------------------------------------
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite um numero: ");
-		int numero = sc.nextInt();
-
-		int soma = numero;
-		int total = 0;
-		while(soma != (numero * 2)) {
-			soma++;
-			total = soma * 2;
-			System.out.println("desmebrando: "+ soma + "*" + "2" + "=" +total);
-		}
-		if(total == (soma * 2)) {
-			System.out.println("Dobro do valor informado: " + total);
-		}
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Digite um numero: ");
+//		int numero = sc.nextInt();
+//
+//		int soma = numero;
+//		int total = 0;
+//		while(soma != (numero * 2)) {
+//			soma++;
+//			total = soma * 2;
+//			System.out.println("desmebrando: "+ soma + "*" + "2" + "=" +total);
+//		}
+//		if(total == (soma * 2)) {
+//			System.out.println("Dobro do valor informado: " + total);
+//		}
 		
 	
 	//----------------------------------------------------------------------
@@ -105,5 +121,10 @@ public class Programa {
 //			}else {
 //				System.out.printf("%d não é numero primo", numero);
 //			}
+	
+	//------------------------------------------------------------------
+		
+		
+		
 	}
 }

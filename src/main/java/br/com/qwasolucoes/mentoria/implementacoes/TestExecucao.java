@@ -4,7 +4,7 @@ import java.util.List;
 
 public class TestExecucao {
 	
-	//public static void main (String[] args) {
+	public static void main (String[] args) {
 		
 		//LogicaProgramacaoProvider provider = new LogicaProgramacaoProvider();
 		//exemplo de como fazer os exercicios
@@ -18,17 +18,17 @@ public class TestExecucao {
 		//int totalImpares = test.numerosImpares(10);
 		//int contadora = 0;
 		
-		public int numerosPares(Integer limite) {
-			
-			TestExecucao test = new TestExecucao();
-			for(int x = 0; x <= limite; x++) {
-				if(x % 2 == 0) {
-				System.out.println(x + "");
-				
-				}
-			}
-			return 0;
-		}
+//		public int numerosPares(Integer limite) {
+//			
+//			TestExecucao test = new TestExecucao();
+//			for(int x = 0; x <= limite; x++) {
+//				if(x % 2 == 0) {
+//				System.out.println(x + "");
+//				
+//				}
+//			}
+//			return limite;
+//		}
 
 		
 //		for(int x = 1; x <= 100; x++) {
@@ -45,15 +45,15 @@ public class TestExecucao {
 //		return numero1 + numero2;
 //	}
 
-	public int numerosImpares(Integer limite) {
-		for (int x = 0; x <= limite; x++) {
-			if(x % 2 != 0) {
-				System.out.println(x+ "");
-			}
-		}
-		
-		return 0;
-	}
+//	public int numerosImpares(Integer limite) {
+//		for (int x = 0; x <= limite; x++) {
+//			if(x % 2 != 0) {
+//				System.out.println(x+ "");
+//			}
+//		}
+//		
+//		return 0;
+//	}
 //	
 //	public static List<Integer> numerosPrimos(Integer limite) {
 //		//List<Integer> lista = new 
@@ -72,3 +72,4 @@ public class TestExecucao {
 //	}
 //	//this.limite += limite;
 	}
+}
