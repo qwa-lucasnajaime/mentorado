@@ -63,15 +63,21 @@ public class Programa {
 //		}	
 	//-------------------------------------------------------------------
 		
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println("Digite um numero: ");
-//		int numero = sc.nextInt();
-//		
-//		int total = numero;
-//		numero = numero * 2;
-//		
-//		
-//		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite um numero: ");
+		int numero = sc.nextInt();
+
+		int soma = numero;
+		int total = 0;
+		while(soma != (numero * 2)) {
+			soma++;
+			total = soma * 2;
+			System.out.println("desmebrando: "+ soma + "*" + "2" + "=" +total);
+		}
+		if(total == (soma * 2)) {
+			System.out.println("Dobro do valor informado: " + total);
+		}
+		
 	
 	//----------------------------------------------------------------------
 //
@@ -89,15 +95,15 @@ public class Programa {
 //			System.out.println("Numero é 0");
 //		}
 		//-----------------------------------------------------------------
-		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite um numero: ");
-		int numero = sc.nextInt();
-		
-			if(numero % 7 == 0) {
-				System.out.printf("%d é um numero primo", numero);
-			}else {
-				System.out.printf("%d não é numero primo", numero);
-			}
+//		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Digite um numero: ");
+//		int numero = sc.nextInt();
+//		
+//			if(numero % 7 == 0) {
+//				System.out.printf("%d é um numero primo", numero);
+//			}else {
+//				System.out.printf("%d não é numero primo", numero);
+//			}
 	}
 }

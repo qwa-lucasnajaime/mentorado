@@ -65,7 +65,7 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 			}
 		}
 
-		return null;//umerosPares(limite); BRANCH DESENVOLVIMENTO
+		return numerosPares(limite);
 	}
 	
 	public List<Integer> numerosImpares(Integer limite) {
@@ -139,7 +139,7 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 		
 		Object[] st = list.toArray(); //Convertendo uma lista para um Array de Objeto
 		for(Object s : st) {
-			if(list.indexOf(s) != list.lastIndexOf(st)) { //encontrando a posição do elemento com indexOf egtdg
+			if(list.indexOf(s) != list.lastIndexOf(st)) { //encontrando a posição do elemento com indexOf
 				list.remove(list.lastIndexOf(s));
 			}
 		}
@@ -291,6 +291,20 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 	public int[] obterDobrosAteDobroInformado(int valor) {
 		// TODO Auto-generated method stub
 		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite um numero: ");
+		int numero = sc.nextInt();
+
+		int soma = numero;
+		int total = 0;
+		while(soma != (numero * 2)) {
+			soma++;
+			total = soma * 2;
+			System.out.println("desmebrando: "+ soma + "*" + "2" + "=" +total);
+		}
+		if(total == (soma * 2)) {
+			System.out.println("Dobro do valor informado: " + total);
+		}
 		return null;
 	}
 
