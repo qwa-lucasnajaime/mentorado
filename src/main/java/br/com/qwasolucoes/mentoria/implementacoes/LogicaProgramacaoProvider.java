@@ -181,15 +181,22 @@ public class LogicaProgramacaoProvider implements LogicaProgramacao {
 
 	public Integer somarValoresPares(Integer limite) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		int resultado = 0;
+		for(int i = 0; i <= limite; i++) {
+			if(i % 2 == 0) {
+				resultado = resultado + i;
+			}
+		}
+		return resultado;
 	}
 
 	public Integer somarValoresImpares(Integer limite) {
 		// TODO Auto-generated method stub
 		
 		int resultado = 0;
-		for(int i =1; i<= limite; i++) {
-			if(i % 2 == 1) {
+		for(int i = 0; i<= limite; i++) {
+			if(i % 2 != 0) {
 				resultado = resultado + i;
 			}
 		}
